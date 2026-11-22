@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#05080d" />
+    <meta name="description" content="Tongxin Zhang — Computer Science at Heidelberg University. Exploring C++ systems, machine learning, numerical computing and quantitative development." />
+    <title>Tongxin Zhang — Cyber Snow / Developer Portfolio</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient-glow ambient-glow--top" aria-hidden="true"></div>
+    <div class="ambient-glow ambient-glow--bottom" aria-hidden="true"></div>
+    <div class="background-grid" aria-hidden="true"></div>
+    <canvas id="snowfield" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <div class="site-header__inner shell">
+        <a href="#top" class="brand" aria-label="Tongxin Zhang — home">
+          <span class="brand__symbol" aria-hidden="true">✳</span>
+          <span>tongxin<span class="brand__accent">.</span>dev</span>
+        </a>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#toolkit">Toolkit</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="true" aria-label="Pause snowfall" title="Pause snowfall">
+            <span class="motion-toggle__spark" aria-hidden="true">✳</span>
+            <span id="motion-label">Snow on</span>
+          </button>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="top" aria-labelledby="hero-heading">
+        <div class="hero__left reveal">
+          <p class="eyebrow"><span class="eyebrow__indicator"></span> BASED IN HEIDELBERG, GERMANY <span class="eyebrow__muted">/ 2026</span></p>
+          <div class="hero__name"><span class="terminal-dollar">$</span> whoami <span class="cursor" aria-hidden="true"></span></div>
+          <h1 id="hero-heading">Engineering<br /><span class="hero__gradient">at the edge of</span><br />performance<span class="hero__punctuation">.</span></h1>
+          <p class="hero__description">Hi, I'm <strong>Tongxin Zhang</strong> — a Computer Science student at Heidelberg University. I enjoy turning algorithms and numerical ideas into clear, testable software, and understanding where the time goes when it runs.</p>
+          <div class="focus-tags" aria-label="Focus areas">
+            <span><span class="focus-tags__mark">//</span> C++ Systems</span>
+            <span><span class="focus-tags__mark">//</span> Machine Learning</span>
+            <span><span class="focus-tags__mark">//</span> Quant / HFT</span>
+          </div>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#work">Explore projects</a>
+            <a class="button button--secondary" href="https://github.com/CuZn6666" target="_blank" rel="noopener noreferrer">GitHub profile</a>
+          </div>
+          <div class="hero__bottomline"><span class="mini-line"></span> Curious by nature. Precise by design.</div>
+        </div>
+
+        <div class="hero__right reveal">
+          <div class="terminal-frame">
+            <div class="terminal-frame__topbar">
+              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span class="terminal-frame__filename" id="file-name">engine.cpp</span>
+              <span class="terminal-frame__state">● local</span>
+            </div>
+            <div class="editor-tabs" role="tablist" aria-label="Illustrative code themes">
+              <button class="editor-tab is-active" type="button" role="tab" aria-selected="true" data-code="cpp">engine.cpp</button>
+              <button class="editor-tab" type="button" role="tab" aria-selected="false" data-code="ml">model.py</button>
+              <button class="editor-tab" type="button" role="tab" aria-selected="false" data-code="quant">pricing.hpp</button>
+            </div>
+            <div class="editor-body">
+              <div class="editor-gutter" aria-hidden="true">01<br />02<br />03<br />04<br />05<br />06<br />07<br />08<br />09</div>
+              <pre id="editor-code" class="editor-code" role="tabpanel" aria-label="Illustrative C++ code"></pre>
+            </div>
+            <div class="terminal-frame__footer"><span><span class="status-dot"></span> BUILD / LEARN / OPTIMIZE</span><span>UTF-8 <span class="footer-separator">·</span> C++</span></div>
+          </div>
+          <div class="hero__orbit" aria-hidden="true"><div class="hero__orbit-center">✳</div></div>
+          <p class="terminal-caption">A glimpse of the things I like to build <span>— illustrative snippets</span></p>
+        </div>
+      </section>
+
+      <div class="section-divider shell" aria-hidden="true"><span>SCROLL TO EXPLORE</span><div></div><span>01 / ABOUT</span></div>
+
+      <section class="section about shell" id="about" aria-labelledby="about-heading">
+        <div class="section-heading reveal">
+          <p class="section-index"><span>01</span> / A LITTLE CONTEXT</p>
+          <h2 id="about-heading">Hello from the <span>intersection.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>My interests meet where <strong>software engineering, mathematics, and performance</strong> overlap. C++ is my primary language; Python is where I experiment with numerical methods and machine learning.</p>
+            <p>At Heidelberg University, I've worked on neural networks built from scratch, numerical projects, and systems-minded software. I'm especially drawn to <strong>low-latency engineering, ML systems, and quantitative development</strong> — directions I'm actively growing toward.</p>
+          </div>
+          <div class="about-facts reveal" aria-label="Profile facts">
+            <div><span class="fact-label">EDUCATION</span><strong>B.Sc. Computer Science</strong><span>Heidelberg University</span></div>
+            <div><span class="fact-label">PRIMARY LANGUAGE</span><strong>C++</strong><span>Algorithms · Systems · Numerical Computing</span></div>
+            <div><span class="fact-label">CURRENT INTEREST</span><strong>Performance-oriented software</strong><span>Machine Learning · Quantitative Systems</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects shell" id="work" aria-labelledby="work-heading">
+        <div class="section-heading section-heading--split reveal">
+          <div><p class="section-index"><span>02</span> / SELECTED WORK</p><h2 id="work-heading">Built to <span>understand.</span><br />Built to last.</h2></div>
+          <p>Not just demos: projects that taught me to measure, debug, test, and refine.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card project-card--quant reveal">
+            <div class="project-card__top"><span class="project-card__category">C++ / NUMERICAL COMPUTING</span><span class="project-status">IN PROGRESS</span></div>
+            <div class="project-art project-art--curve" aria-hidden="true">
+              <div class="axis-label axis-label--one">S(t)</div><div class="axis-label axis-label--two">paths → payoffs → estimate</div>
+              <svg viewBox="0 0 460 155" preserveAspectRatio="none"><defs><linearGradient id="curve-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#48dffa" stop-opacity=".25"/><stop offset="1" stop-color="#48dffa" stop-opacity="0"/></linearGradient></defs><path class="curve-grid" d="M0 35H460M0 75H460M0 115H460"/><path d="M0 130 C30 115,44 128,68 90 S110 56,132 82 S171 116,199 67 S245 35,273 61 S314 68,339 39 S400 71,460 15 L460 155 L0 155 Z" fill="url(#curve-gradient)"/><path class="curve-line" d="M0 130 C30 115,44 128,68 90 S110 56,132 82 S171 116,199 67 S245 35,273 61 S314 68,339 39 S400 71,460 15"/><path class="curve-line curve-line--ghost" d="M0 114 C37 88,45 128,78 108 S128 73,157 100 S203 76,230 87 S273 37,307 75 S370 38,400 53 S442 27,460 43"/></svg>
+            </div>
+            <div class="project-card__body"><h3>Monte Carlo Option Pricing</h3><p>A modular C++ pricing engine for path-dependent options, with GBM simulation, numerical statistics, CMake builds, and performance benchmarking.</p><div class="tech-line"><span>C++</span><span>CMake</span><span>Monte Carlo</span><span>GBM</span></div><span class="project-card__note">Repository link omitted until publicly accessible</span></div>
+          </article>
+          <article class="project-card project-card--ml reveal">
+            <div class="project-card__top"><span class="project-card__category">ML / PERFORMANCE ENGINEERING</span><span class="project-status project-status--done">ACADEMIC PROJECT</span></div>
+            <div class="project-art project-art--network" aria-hidden="true">
+              <svg viewBox="0 0 460 155"><g class="network-lines" stroke="#47b5cf" stroke-width="1.4" opacity=".43"><path d="M68 27L200 20L325 40L410 77M68 27L200 80L325 40M68 27L200 133L325 117L410 77M68 77L200 20L325 117M68 77L200 80L325 40L410 77M68 77L200 133L325 117M68 128L200 20L325 40M68 128L200 80L325 117M68 128L200 133L325 40L410 77"/></g><g fill="#06141f" stroke="#6bd8ef" stroke-width="2"><circle cx="68" cy="27" r="9"/><circle cx="68" cy="77" r="9"/><circle cx="68" cy="128" r="9"/><circle cx="200" cy="20" r="9"/><circle cx="200" cy="80" r="9"/><circle cx="200" cy="133" r="9"/><circle cx="325" cy="40" r="9"/><circle cx="325" cy="117" r="9"/><circle cx="410" cy="77" r="10" fill="#46d4e8"/></g></svg>
+            </div>
+            <div class="project-card__body"><h3>Neural Networks from Scratch</h3><p>Manual CNN backpropagation, gradient checks, adversarial robustness (FGSM / PGD), and Grad-CAM. Profiling drove roughly 200× faster Conv2D backward computation in the tested setup.</p><div class="tech-line"><span>Python</span><span>NumPy</span><span>CNN</span><span>Grad-CAM</span></div><span class="project-card__note">Research practicum · Heidelberg University</span></div>
+          </article>
+          <article class="project-card project-card--studio reveal">
+            <div class="project-card__top"><span class="project-card__category">FULL STACK / PRODUCT ENGINEERING</span><span class="project-status project-status--done">PUBLIC REPOSITORY</span></div>
+            <div class="project-art project-art--flow" aria-hidden="true"><div class="flow-node">REACT<br /><b>UI</b></div><div class="flow-connector"></div><div class="flow-node flow-node--bright">SPRING<br /><b>API</b></div><div class="flow-connector"></div><div class="flow-node">H2<br /><b>DB</b></div></div>
+            <div class="project-card__body"><h3>Product Integration Studio</h3><p>A full-stack workspace for product CRUD, search, status filtering, and integration-flow visualization using Java, Spring Boot, React, and TypeScript.</p><div class="tech-line"><span>Java</span><span>React</span><span>TypeScript</span><span>REST API</span></div><a class="project-link" href="https://github.com/CuZn6666/Product-Integration-Studio" target="_blank" rel="noopener noreferrer">View repository</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience shell" id="experience" aria-labelledby="experience-heading">
+        <div class="section-heading reveal"><p class="section-index"><span>03</span> / BEYOND THE CODE</p><h2 id="experience-heading">Engineering is <span>a practice.</span></h2></div>
+        <div class="experience-grid">
+          <div class="experience-panel reveal"><div class="experience-panel__meta"><span class="experience-panel__kind">INDUSTRY EXPERIENCE</span><span class="experience-panel__mark">↗</span></div><h3>Working Student · Cinemo</h3><p class="experience-panel__subtitle">Automotive software testing & automation</p><p>Worked with Python and Linux-based tooling for infotainment and Apple CarPlay / Android Auto testing. Focused on reusable automation, log analysis, reproducible bugs, and collaboration with software engineers.</p><div class="metric-row"><div><strong>15K<span>+</span></strong><span>tests in documented scope</span></div><div><strong>~50<span>%</span></strong><span>test-cycle time reduction</span></div></div></div>
+          <div class="experience-panel experience-panel--contest reveal"><div class="experience-panel__meta"><span class="experience-panel__kind">ALGORITHMIC FOUNDATIONS</span><span class="experience-panel__mark">✳</span></div><h3>Competitive programming</h3><p class="experience-panel__subtitle">Algorithms under pressure</p><p>Years of contest preparation developed a habit of breaking complex problems into precise steps, choosing efficient data structures, and reasoning about performance.</p><div class="achievement"><span>NOIP</span><strong>Provincial First Prize</strong></div><div class="achievement"><span>SDOI</span><strong>Provincial Selection · Rank 19</strong></div></div>
+        </div>
+      </section>
+
+      <section class="section toolkit shell" id="toolkit" aria-labelledby="toolkit-heading">
+        <div class="section-heading section-heading--split reveal"><div><p class="section-index"><span>04</span> / THE TOOLKIT</p><h2 id="toolkit-heading">Languages, tools,<br /><span>and good habits.</span></h2></div><p>A practical stack built around code, testing, and a healthy respect for the profiler.</p></div>
+        <div class="toolkit-grid reveal">
+          <div class="toolkit-group"><div class="toolkit-group__heading"><span>01 / LANGUAGES</span><span class="toolkit-group__glyph">{ }</span></div><div class="toolkit-pills"><span>C++</span><span>Python</span><span>Java</span><span>TypeScript</span><span>SQL</span></div></div>
+          <div class="toolkit-group"><div class="toolkit-group__heading"><span>02 / ENGINEERING</span><span class="toolkit-group__glyph">&lt;/&gt;</span></div><div class="toolkit-pills"><span>Linux</span><span>Git</span><span>CMake</span><span>Testing</span><span>CI/CD</span><span>Docker</span></div></div>
+          <div class="toolkit-group"><div class="toolkit-group__heading"><span>03 / APPLICATIONS</span><span class="toolkit-group__glyph">◇</span></div><div class="toolkit-pills"><span>Spring Boot</span><span>React</span><span>REST APIs</span><span>Scrapy</span><span>H2 / SQL</span></div></div>
+          <div class="toolkit-group"><div class="toolkit-group__heading"><span>04 / RESEARCH</span><span class="toolkit-group__glyph">∑</span></div><div class="toolkit-pills"><span>NumPy</span><span>CNNs</span><span>Monte Carlo</span><span>Numerical Methods</span><span>Optimization</span></div></div>
+        </div>
+      </section>
+
+      <section class="contact shell" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-card reveal">
+          <div class="contact-card__glow" aria-hidden="true"></div>
+          <p class="section-index"><span>05</span> / KEEP IN TOUCH</p>
+          <h2 id="contact-heading">Let's build something <span>worth measuring.</span></h2>
+          <p>Interested in C++ software engineering, machine learning, and the systems behind quantitative computing. Always curious about thoughtful engineering work.</p>
+          <a class="button button--primary" href="https://github.com/CuZn6666" target="_blank" rel="noopener noreferrer">Find me on GitHub</a>
+          <div class="contact-card__terminal" aria-hidden="true">$ echo "build • measure • improve" <span class="cursor"></span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell"><span>© <span id="year">2026</span> Tongxin Zhang</span><span>Made with curiosity, code, and a little snow.</span><a href="#top">Back to top</a></footer>
+  </body>
+</html>
